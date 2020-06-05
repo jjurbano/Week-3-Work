@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
@@ -14,6 +16,8 @@
   "author": "Justin Urbano",
   "license": "ISC",
   "devDependencies": {
+    "copyfiles": "^2.0.0",
+    "imagemin-cli": "^3.0.0",
     "lite-server": "^2.3.0",
     "node-sass": "^4.12.0",
     "onchange": "^3.3.0",
